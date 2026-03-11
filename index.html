@@ -128,6 +128,30 @@
       </div>
     </section>
 
+    <!-- FLYERS -->
+    <!--
+    <section class="section flyer-section">
+      <div class="section-inner">
+        <h2>Upcoming Events</h2>
+        <div class="divider">&#11835; &#10022; &#11835;</div>
+        <div class="flyer-grid">
+          <picture>
+            <source srcset="flyer-valentines.webp" type="image/webp" />
+            <img src="Square Dance Instagram Post (Valentine's).png" alt="Valentine's Square Dance flyer" class="flyer-thumb lightbox-trigger-flyer" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox-flyer">
+      <button class="lightbox-close lightbox-close-flyer" aria-label="Close">&times;</button>
+      <picture>
+        <source srcset="flyer-valentines.webp" type="image/webp" />
+        <img src="Square Dance Instagram Post (Valentine's).png" alt="Valentine's Square Dance flyer" />
+      </picture>
+    </div>
+    -->
+
     <!-- DANCERS DIVIDER -->
     <div class="dancers-divider">
       <img src="dancers.png" alt="Square dancers" />
@@ -165,6 +189,12 @@
     document.querySelector('.lightbox-trigger').addEventListener('click', () => lightbox.classList.add('open'));
     document.querySelector('.lightbox-close').addEventListener('click', () => lightbox.classList.remove('open'));
     lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.classList.remove('open'); });
+
+    // const lightboxFlyer = document.getElementById('lightbox-flyer');
+    // document.querySelector('.lightbox-trigger-flyer').addEventListener('click', () => lightboxFlyer.classList.add('open'));
+    // document.querySelector('.lightbox-close-flyer').addEventListener('click', () => lightboxFlyer.classList.remove('open'));
+    // lightboxFlyer.addEventListener('click', e => { if (e.target === lightboxFlyer) lightboxFlyer.classList.remove('open'); });
+
     document.addEventListener('keydown', e => { if (e.key === 'Escape') lightbox.classList.remove('open'); });
   </script>
 </body>
