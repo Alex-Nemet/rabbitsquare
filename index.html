@@ -58,6 +58,12 @@
     <!-- BAND PHOTO -->
     <section class="photo-section">
       <div class="photo-frame">
+        <img src="rabbit-square-dance-band.jpg" alt="Rabbit Square old time string band" class="lightbox-trigger" />
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
         <img src="rabbit-square-dance-band.jpg" alt="Rabbit Square old time string band" />
       </div>
     </section>
@@ -148,5 +154,12 @@
     <p>&copy; <script>document.write(new Date().getFullYear())</script> The Rabbit Square Dance Band &nbsp;&bull;&nbsp; All rights reserved</p>
   </footer>
 
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    document.querySelector('.lightbox-trigger').addEventListener('click', () => lightbox.classList.add('open'));
+    document.querySelector('.lightbox-close').addEventListener('click', () => lightbox.classList.remove('open'));
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.classList.remove('open'); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') lightbox.classList.remove('open'); });
+  </script>
 </body>
 </html>
