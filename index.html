@@ -32,7 +32,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Playfair+Display:ital,wght@0,700;1,400&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,400&family=IM+Fell+English:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -74,12 +74,16 @@
         </div>
         <div class="lineup">
           <h3>The Band</h3>
-          <ul>
-            <li>Amy Lounder &mdash; Fiddle</li>
-            <li>Jude Pelley &mdash; Guitar</li>
-            <li>Peter Williams &mdash; Upright Bass</li>
-            <li>Alex Nemet &mdash; Banjo</li>
-          </ul>
+          <div class="lineup-inner">
+            <img src="rabbit-banjo.png" alt="" class="rabbit-illustration" />
+            <ul>
+              <li>Amy Lounder &mdash; Fiddle</li>
+              <li>Jude Pelley &mdash; Guitar</li>
+              <li>Peter Williams &mdash; Upright Bass</li>
+              <li>Alex Nemet &mdash; Banjo</li>
+            </ul>
+            <img src="rabbit-bass.png" alt="" class="rabbit-illustration rabbit-flip" />
+          </div>
         </div>
       </div>
     </section>
@@ -98,12 +102,24 @@
             <div class="video-embed">
               <iframe src="https://www.youtube.com/embed/RYoYJk1xxeY" title="Rabbit Square Dance Band" frameborder="0" allowfullscreen></iframe>
             </div>
-            <p class="video-caption">Rabbit Square Dance Band</p>
+            <p class="video-caption">Live at Gaspereau Community Hall</p>
+          </div>
+
+          <div class="video-card">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/c9sseYWg55M" title="Rabbit Square Dance Band — Live at Ross Creek Annex" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p class="video-caption">Live at Ross Creek Annex, Canning NS</p>
           </div>
 
         </div>
       </div>
     </section>
+
+    <!-- DANCERS DIVIDER -->
+    <div class="dancers-divider">
+      <img src="dancers.png" alt="Square dancers" />
+    </div>
 
     <!-- CONTACT -->
     <section id="contact" class="section">
@@ -113,16 +129,23 @@
         <p class="contact-text">
           Available for festivals, dances, barn dances, listening rooms, and private events.
         </p>
-        <p class="contact-email">
-          <a href="mailto:band@rabbitsquaredanceband.ca">band@rabbitsquaredanceband.ca</a>
-        </p>
+        <div class="contact-links">
+          <a href="mailto:band@rabbitsquaredanceband.ca">
+            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            band@rabbitsquaredanceband.ca
+          </a>
+          <a href="https://www.instagram.com/rabbitsquaredanceband/" target="_blank" rel="noopener">
+            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            @rabbitsquaredanceband
+          </a>
+        </div>
       </div>
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; <script>document.write(new Date().getFullYear())</script> Rabbit Square &nbsp;&bull;&nbsp; All rights reserved</p>
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> The Rabbit Square Dance Band &nbsp;&bull;&nbsp; All rights reserved</p>
   </footer>
 
 </body>

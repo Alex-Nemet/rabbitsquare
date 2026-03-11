@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rabbitsquaredanceband.ca/sitemap.xml
