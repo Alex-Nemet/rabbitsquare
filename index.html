@@ -7,6 +7,8 @@
   <meta name="description" content="The Rabbit Square Dance Band plays old time string music and calls square dances across Nova Scotia and the Annapolis Valley. Available for barn dances, festivals, and community events." />
   <meta name="keywords" content="Rabbit Square Dance Band, old time music Nova Scotia, square dance Nova Scotia, Annapolis Valley string band, barn dance Nova Scotia, old time string band, fiddle music Nova Scotia, square dance band Maritimes, community dance Nova Scotia, Canning Nova Scotia music" />
 
+  <link rel="canonical" href="https://rabbitsquaredanceband.ca" />
+
   <!-- Open Graph -->
   <meta property="og:title" content="Rabbit Square Dance Band" />
   <meta property="og:description" content="Old time string music &amp; square dance from the Annapolis Valley, Nova Scotia." />
@@ -14,19 +16,73 @@
   <meta property="og:url" content="https://rabbitsquaredanceband.ca" />
   <meta property="og:image" content="https://rabbitsquaredanceband.ca/rabbit-square-dance-band.jpg" />
 
-  <!-- Structured Data -->
+  <!-- Structured Data: Band -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "MusicGroup",
     "name": "Rabbit Square Dance Band",
-    "description": "Old time string music and square dance band from the Annapolis Valley, Nova Scotia.",
+    "description": "Old time string music and square dance band from the Annapolis Valley, Nova Scotia. Available for barn dances, festivals, and community events across Nova Scotia and the Maritimes.",
     "genre": ["Old Time", "Folk", "Square Dance", "String Band"],
     "areaServed": {
       "@type": "Place",
       "name": "Nova Scotia, Canada"
     },
-    "url": "https://rabbitsquaredanceband.ca"
+    "url": "https://rabbitsquaredanceband.ca",
+    "sameAs": [
+      "https://www.instagram.com/rabbitsquaredanceband/"
+    ],
+    "member": [
+      { "@type": "Person", "name": "Amy Lounder", "instrument": "Fiddle" },
+      { "@type": "Person", "name": "Jude Pelley", "instrument": "Guitar" },
+      { "@type": "Person", "name": "Peter Williams", "instrument": "Upright Bass" },
+      { "@type": "Person", "name": "Alex Nemet", "instrument": "Banjo" }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "band@rabbitsquaredanceband.ca",
+      "contactType": "Booking"
+    }
+  }
+  </script>
+
+  <!-- Structured Data: Upcoming Event -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DanceEvent",
+    "name": "Square Dance at West Brooklyn Speakeasy",
+    "description": "An evening of live old-time music and square dancing with Rabbit Square Dance Band. No experience or partner needed. Caller teaches all the moves.",
+    "startDate": "2026-04-24T19:30",
+    "endDate": "2026-04-24T22:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "West Brooklyn Speakeasy",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "410 West Brooklyn Mtn. Rd.",
+        "addressRegion": "NS",
+        "addressCountry": "CA"
+      }
+    },
+    "organizer": {
+      "@type": "MusicGroup",
+      "name": "Rabbit Square Dance Band",
+      "url": "https://rabbitsquaredanceband.ca"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "20",
+      "priceCurrency": "CAD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://rabbitsquaredanceband.ca"
+    },
+    "performer": {
+      "@type": "MusicGroup",
+      "name": "Rabbit Square Dance Band"
+    }
   }
   </script>
 
