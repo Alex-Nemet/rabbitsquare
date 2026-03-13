@@ -171,6 +171,13 @@ nav a:hover { color: var(--gold); }
   box-shadow: 0 8px 24px rgba(0,0,0,0.35);
 }
 
+.event-details {
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
 /* ── Sections ── */
 .section {
   padding: 4rem 1rem;

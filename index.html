@@ -82,6 +82,7 @@
         <div class="bio">
           <p>Travel the familiar haunts along the intervals of the Eastern North Mountain outside of Canning, Nova Scotia, and you'll find yourself near the storied crossroads of Rabbit Square—a place rooted in local lore and the vibrant spirit of community gatherings. It's from this rich cultural landscape of the Annapolis Valley that the Rabbit Square Dance Band draws its name and inspiration.</p>
           <p>Carrying forward the region's old-time dance tradition with infectious energy and authentic flair, the Rabbit Square Dance Band delivers an unforgettable experience for dancers and listeners alike. The band weaves together a tight, toe-tapping soundscape: Amy Lounder on fiddle, Jude Pelley on guitar, Peter Williams on upright bass, and Alex Nemet on banjo. Their joyful, driving rhythms invite everyone—whether seasoned dancers or curious newcomers—to join the whirl of the square.</p>
+          <p>Every dance is guided by a caller—someone who teaches the moves and calls them out in real time, so no experience is needed. No partner? No problem. Everyone is welcome and partners are shared throughout the night. Rabbit Square Dance Band works with a rotating cast of talented local callers.</p>
           <p>From barn floors to festival tents, the Rabbit Square Dance Band brings communities together with each stomp, spin, and swing. Come for the music, stay for the magic.</p>
         </div>
         <div class="lineup">
@@ -93,6 +94,7 @@
               <li>Jude Pelley &mdash; Guitar</li>
               <li>Peter Williams &mdash; Upright Bass</li>
               <li>Alex Nemet &mdash; Banjo</li>
+              <li><em>Rotating Caller</em></li>
             </ul>
             <img src="rabbit-bass.png" alt="" class="rabbit-illustration rabbit-flip" />
           </div>
@@ -129,33 +131,28 @@
     </section>
 
     <!-- FLYERS -->
-    <!--
     <section class="section flyer-section">
       <div class="section-inner">
         <h2>Upcoming Events</h2>
         <div class="divider">&#11835; &#10022; &#11835;</div>
         <div class="flyer-grid">
-          <picture>
-            <source srcset="flyer-valentines.webp" type="image/webp" />
-            <img src="Square Dance Instagram Post (Valentine's).png" alt="Valentine's Square Dance flyer" class="flyer-thumb lightbox-trigger-flyer" />
-          </picture>
+          <img src="posters/Square Dance Poster (West Brooklyn Speakeasy)(Instagram Post).png" alt="Square Dance at West Brooklyn Speakeasy poster" class="flyer-thumb lightbox-trigger-flyer" />
         </div>
+        <p class="event-details"><strong>Friday, April 24th &mdash; 7:30&ndash;10 PM</strong><br>West Brooklyn Speakeasy, 410 West Brooklyn Mtn. Rd.<br>$20 at the door &mdash; call or text <a href="tel:9023855426">902-385-5426</a> to reserve</p>
       </div>
     </section>
 
     <div class="lightbox" id="lightbox-flyer">
       <button class="lightbox-close lightbox-close-flyer" aria-label="Close">&times;</button>
-      <picture>
-        <source srcset="flyer-valentines.webp" type="image/webp" />
-        <img src="Square Dance Instagram Post (Valentine's).png" alt="Valentine's Square Dance flyer" />
-      </picture>
+      <img src="posters/Square Dance Poster (West Brooklyn Speakeasy)(Instagram Post).png" alt="Square Dance at West Brooklyn Speakeasy poster" />
     </div>
-    -->
 
-    <!-- DANCERS DIVIDER -->
+    <!-- DANCERS DIVIDER (commented out while poster is in Upcoming Events section) -->
+    <!--
     <div class="dancers-divider">
       <img src="dancers.png" alt="Square dancers" />
     </div>
+    -->
 
     <!-- CONTACT -->
     <section id="contact" class="section">
@@ -190,12 +187,17 @@
     document.querySelector('.lightbox-close').addEventListener('click', () => lightbox.classList.remove('open'));
     lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.classList.remove('open'); });
 
-    // const lightboxFlyer = document.getElementById('lightbox-flyer');
-    // document.querySelector('.lightbox-trigger-flyer').addEventListener('click', () => lightboxFlyer.classList.add('open'));
-    // document.querySelector('.lightbox-close-flyer').addEventListener('click', () => lightboxFlyer.classList.remove('open'));
-    // lightboxFlyer.addEventListener('click', e => { if (e.target === lightboxFlyer) lightboxFlyer.classList.remove('open'); });
+    const lightboxFlyer = document.getElementById('lightbox-flyer');
+    document.querySelector('.lightbox-trigger-flyer').addEventListener('click', () => lightboxFlyer.classList.add('open'));
+    document.querySelector('.lightbox-close-flyer').addEventListener('click', () => lightboxFlyer.classList.remove('open'));
+    lightboxFlyer.addEventListener('click', e => { if (e.target === lightboxFlyer) lightboxFlyer.classList.remove('open'); });
 
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') lightbox.classList.remove('open'); });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        lightbox.classList.remove('open');
+        lightboxFlyer.classList.remove('open');
+      }
+    });
   </script>
 </body>
 </html>
